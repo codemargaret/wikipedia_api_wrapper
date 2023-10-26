@@ -1,0 +1,7 @@
+<h1>1,000 Most Viewed Articles on Wikipedia Yesterday, <%= Date.yesterday.strftime("%B %d, %Y") %> </h1>
+
+<div>
+  <% @api_result.each do |article|%>
+    <p>Title: <%= article["article"].gsub("_", " ") %>, Views: <%= article["views"] %> </p>
+  <% end %>
+</div>

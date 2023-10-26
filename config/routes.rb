@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # resources :api_results
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  get 'most_viewed_yesterday', to: 'api_results#index', as: 'yesterday'
 end
