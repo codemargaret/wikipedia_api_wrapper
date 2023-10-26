@@ -12,6 +12,7 @@ Data comes from the [Wikipedia API](https://wikitech.wikimedia.org/wiki/Analytic
 A user should be able to:
 
 - See the most viewed articles yesterday.
+- See the most viewed articles per week and per month.
 
 ### Setup Instructions
 
@@ -28,3 +29,11 @@ A user should be able to:
 Get a list of the most viewed articles yesterday.
 
 GET http://localhost:3000/most_viewed_yesterday
+
+Get a list of the most viewed articles for the last week. The end date is yesterday's date and the start date is 7 days before yesterday.
+
+GET http://localhost:3000/most_viewed_last_week
+
+Get a list of the most viewed articles for the last month. The end date is yesterday's date and the start date is 30 days before yesterday.
+
+GET http://localhost:3000/most_viewed_last_month

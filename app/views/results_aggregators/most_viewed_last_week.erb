@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 >Most Viewed Articles on Wikipedia in the Last Week</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Views</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @results_aggregator_week.each do |key, value| %>
+        <tr>
+          <td><%= key.gsub("_", " ") %></td>
+          <td><%= number_to_human(value) %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
