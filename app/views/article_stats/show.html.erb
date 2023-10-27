@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>View Statistics for <%= params["title"].gsub("_", " ") %></h1>
+
+  <p>Total views in the past week: <%= number_to_human(@article_stats_week) %></p>
+
+  <p>Total views in the past month: <%= number_to_human(@article_stats_month) %></p>
+
+  <p>Biggest day in the past month: <%= number_to_human(@biggest_day_in_month[1]) %> views on <%= @biggest_day_in_month[0].strftime('%B %d, %Y') %>.</p>
+</div>

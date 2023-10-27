@@ -12,7 +12,7 @@
     <tbody>
       <% @results_aggregator_month.each do |key, value| %>
         <tr>
-          <td><%= key.gsub("_", " ") %></td>
+          <td><%= link_to key.gsub("_", " "), article_stat_url(key) %></td>
           <td><%= number_to_human(value) %></td>
         </tr>
       <% end %>
