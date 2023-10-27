@@ -37,3 +37,8 @@ GET http://localhost:3000/most_viewed_last_week
 Get a list of the most viewed articles for the last month. The end date is yesterday's date and the start date is 30 days before yesterday.
 
 GET http://localhost:3000/most_viewed_last_month
+
+### License
+This software is licensed under the MIT license.
+
+Copyright (c) 2023 Margaret Berry
